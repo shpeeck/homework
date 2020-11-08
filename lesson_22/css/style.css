@@ -44,4 +44,51 @@ body {
 
 .button:hover {
     background-color: rgb(255, 198, 187);
+    transition: ease-in-out 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-top {
+    background-color: red;
+    grid-area: left-top;
+
+}
+.right-top {
+    background-color: green;
+    grid-area: right-top;
+}
+.center {
+    justify-self: center;
+    align-self: center;
+    background-color: blue;
+    grid-area: center;
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-bottom {
+    background-color: gray;
+    grid-area: left-bottom;
+
+}
+.right-bottom {
+    background-color: orange;
+    grid-area: right-bottom;
+
 }
