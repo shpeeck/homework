@@ -27,19 +27,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let bottomLeft = document.querySelector(".border-lb");
     let bottomRight = document.querySelector(".border-rb");
 
-    topLeft.addEventListener('change', function (e) {
+    topLeft.addEventListener('input', function (e) {
+    // topLeft.addEventListener('change', function (e) {
         center.style.borderTopLeftRadius = topLeft.value + 'px';
         // Второй вариант 
         // center.setAttribute("style", `border-top-left-radius: ${topLeft.value}px`);
         console.log(topLeft);
     });
-    topRight.addEventListener('change', function (e) {
+    topRight.addEventListener('input', function (e) {
         center.style.borderTopRightRadius = topRight.value + 'px';
     });
-    bottomLeft.addEventListener('change', function (e) {
+    bottomLeft.addEventListener('input', function (e) {
         center.style.borderBottomLeftRadius = bottomLeft.value + 'px';
     });
-    bottomRight.addEventListener('change', function (e) {
+    bottomRight.addEventListener('input', function (e) {
         center.style.borderBottomRightRadius = bottomRight.value + 'px';
     });
 });
