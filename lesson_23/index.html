@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrap ">
+            <form class="form__field js-form form" action="mail.php" method="POST">
+                <label class="form__label">
+                    Name
+                    <input type="text" placeholder="Yevhen" required data-validate-field="name" name="user-name">
+                </label>
+                <label class="form__label">
+                    Email
+                    <input type="email" placeholder="email@gmail.com" required data-validate-field="email" name="user-email">
+                </label>
+                <label class="form__label">
+                    Phone
+                    <input type="phone" required data-validate-field="phone" name="user-phone">
+                </label>
+                <input class="button" type="submit" value="submit">
+            </form>
+        </div>
+        <div class="modal">
+            <p>Форма отправлена!</p>
+        </div>
+    </div>
+
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
