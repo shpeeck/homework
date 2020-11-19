@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Домашняя работа №24</h1>
+        <div class="tab">
+            <ul class="tab__list">
+                <li class="tab__item tab__item--active" data-tabnumber="1">Цвета</li>
+                <li class="tab__item" data-tabnumber="2">Скругление углов</li>
+                <li class="tab__item" data-tabnumber="3">Форма</li>
+            </ul>
+            <div class="tab__body">
+                <div class="tab__content">
+                    <div class="color-container">
+                        <p class="color-container_text code_color">Press Space for change color</p>
+                    </div>
+                </div>
+                <!-- border radius -->
+                <div class="tab__content">
+                    <div class="container-cont">
+                        <div class="top">
+                            <div class="left-top">
+                                <input type="range" class="border-lt" value="0">
+                            </div>
+                            <div class="right-top">
+                                <input type="range" class="border-rt" value="0">
+                            </div>
+                        </div>
+                        <div class="center-radius"></div>
+                        <div class="bottom">
+                            <div class="left-bottom">
+                                <input type="range" class="border-lb" value="0">
+                            </div>
+                            <div class="right-bottom">
+                                <input type="range" class="border-rb" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end border-radius -->
+                <!-- form -->
+                <div class="tab__content">
+                    <div class="form-wrap ">
+                        <form class="form__field js-form form" action="mail.php" method="POST">
+                            <label class="form__label">
+                                Name
+                                <input type="text" placeholder="Yevhen" required data-validate-field="name" name="user-name">
+                            </label>
+                            <label class="form__label">
+                                Email
+                                <input type="email" placeholder="email@gmail.com" required data-validate-field="email" name="user-email">
+                            </label>
+                            <label class="form__label">
+                                Phone
+                                <input type="phone" required data-validate-field="phone" name="user-phone">
+                            </label>
+                            <input class="button" type="submit" value="submit">
+                        </form>
+                    </div>
+                    <div class="modal">
+                        <p>Форма отправлена!</p>
+                    </div>
+                </div>
+                <!-- end form -->
+            </div>
+        </div>
+    </div>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
