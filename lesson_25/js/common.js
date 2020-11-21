@@ -63,8 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("tasks", JSON.stringify(arrayTasks));
     };
 
+   
     const addNewTask = () => {
-        if (intField.value >=1) {
+        if (intField.value) {
         arrayTasks.push(new newTask(intField.value));
         refreshLocalStorage();
         showTaskList();
