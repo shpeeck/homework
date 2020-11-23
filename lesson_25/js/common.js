@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <button class="button button-delete" data-index="${index}">Удалить</button>
             </div>
         `;
+        
     };
 
     const showTaskList = () => {
@@ -63,9 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("tasks", JSON.stringify(arrayTasks));
     };
 
-   
     const addNewTask = () => {
-        if (intField.value) {
+        if (intField.value.trim()) {
         arrayTasks.push(new newTask(intField.value));
         refreshLocalStorage();
         showTaskList();
