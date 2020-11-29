@@ -4,22 +4,26 @@ $(document).ready( function() {
     // console.log(title);
 
     if (title == "Massiv") {
-        // Проверка возраста
-        let name = prompt("Ваше имя");
-        let age = prompt("Ваш возраст");
-
-        if(age<0) {
-            alert("Неправильно введен возраст!")
-        }
-        else if(age<=16){
-            alert(`Привет, ${name}! Вы подросток!`);
-        }
-        else if (age >= 17 && age <= 40){
-            alert(`Привет, ${name}! Вы молодой человек`)
-        }
-        else if(age >= 41){
-            alert(`Привет, ${name}! Вы старичок`)
-        }
+        let arr = [
+            ["овощи", "фрукты", "ягоды"],
+            ["vegetables", "fruit", "berries"]
+        ];
+        
+        let rus = $(".rus");
+        let eng = $(".eng");
+        
+        rus.on("click", function () {
+            for (let i = 0; i < arr[0].length; i++) {
+                console.log(arr[0][i]);
+            }
+            $(".mass-text").text(arr[0].join(" "));
+        })
+        eng.on("click", function () {
+            for (let i = 0; i < arr[1].length; i++) {
+                console.log(arr[1][i]);
+            }
+            $(".mass-text").text(arr[1].join(" "));
+        })
     } else if (title == "Color Generator") {
         // Функция-генератор цвета
         function randColor(elem) {

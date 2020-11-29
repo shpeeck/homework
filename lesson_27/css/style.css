@@ -13,7 +13,7 @@ body {
 }
 
 .navigation {
-    width: 1000%;
+    width: 100%;
     min-height: 800px;
     margin: 0 auto;
     display: flex;
@@ -115,4 +115,18 @@ a{
     display: flex;
     flex-direction: column;
     margin: 50px;
+}
+
+.container-mass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+}
+.mass-text {
+    display: inline-block;
 }
